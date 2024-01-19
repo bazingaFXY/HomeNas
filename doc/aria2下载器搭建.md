@@ -8,9 +8,7 @@
 
 docker
 
-aira2+ariaNG 全用docker，后期改的时候再查教程
-
-ps docker方案有一个下载路径的问题，可以看看宿主机aira2+docker ariaNG方案看看
+aira2+ariaNG 全用docker
 
 ```
 $ docker pull p3terx/aria2-pro
@@ -19,7 +17,7 @@ $ docker run -d \
     --name aria2-pro \
     --restart unless-stopped \
     --log-opt max-size=1m --network host -e PUID=0 -e PGID=0 \
-    -e RPC_SECRET=fl654123 \
+    -e RPC_SECRET=password \
     -e RPC_PORT=6800 \
     -e LISTEN_PORT=6888 \
     -v /home/bazinga/raid5/docker_hub/aria2/config:/config \
